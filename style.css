@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --var-color-left: #ffe587;
+    --var-color-right: #9e8920;
+    --var-hover-button: #DFA878;
+    --var-hover-font: #6C3428;
+}
+body{
+    background: #ffe587;
+    color: #302e24;
+    width: 100%;
+    height: 100vh;
+}
+.layout{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width:100%;
+    height:100%;
+    background: transparent;
+    overflow: hidden;
+}
+.create-todo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background: lightblue;
+    gap: 2em;
+}
+.todo-bar{
+    width: 50%;
+    height: 100%;
+    background: lightgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.create-todo button{
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #343942;
+    cursor: pointer;
+    transition: 250ms ease-in;
+}
+button:hover{
+    background: var(--var-hover-button);
+    color: var(--var-hover-font);
+    border: none;
+}
+.task{
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background: lightseagreen;
+}
