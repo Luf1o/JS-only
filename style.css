@@ -66,4 +66,5 @@ button:hover{
     margin-top: 10px;
     padding: 10px;
     background: lightseagreen;
+    border: none;
 }
